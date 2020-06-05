@@ -46,5 +46,5 @@ You should be able to visit http://localhost:8000//api/v1/plans to see a list of
 
 In the project root, run `bin/phpunit` to install PHPUnit's dependencies. 
 
-You should now be able to run `bin/phpunit` to run the test suite.
+You should now be able to run `bin/phpunit tests` to run the test suite.
 
