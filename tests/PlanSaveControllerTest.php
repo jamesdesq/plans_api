@@ -20,6 +20,9 @@ class PlanSaveControllerTest extends TestCase {
     // @todo should really implement delete method on the users_saved_plans to clean up test data.
   }
 
+  /**
+   * Allows the user to save their desired plans and billing frequency.
+   */
   public function testPlanSave() {
 
     $data = array(

@@ -16,6 +16,9 @@ class PlanSaveController extends AbstractController {
   /**
    * @Route("api/vi/account-management/plans")
    * @Method("POST")
+   *
+   * @param Request $request the http request body
+   * @return \Symfony\Component\HttpFoundation\JsonResponse
    */
   public function save(Request $request) {
 

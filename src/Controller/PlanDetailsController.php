@@ -41,6 +41,9 @@ class PlanDetailsController extends AbstractController {
 
   /**
    * @Route("/api/v1/plans/{plan_code}")
+   *
+   * @param string $plan_code the two character plan code
+   * @return \Symfony\Component\HttpFoundation\JsonResponse
    */
   public function getSingle($plan_code) {
 
@@ -55,6 +58,10 @@ class PlanDetailsController extends AbstractController {
   /**
    * @Route("api/v1/plans/costs/{options}")
    * @Method("GET")
+   *
+   * @param string $options a JSON encoded array of the user's choices
+   *
+   * @return \Symfony\Component\HttpFoundation\JsonResponse
    */
   public function getCosts($options) {
 
@@ -77,6 +84,10 @@ class PlanDetailsController extends AbstractController {
 
   /**
    * Helper function to make Doctrine results JSON-friendly.
+   *
+   * @param PlanDetails $result A plan details entity to convert
+   *
+   * @return array the plan details ready to be JSON encoded.
    */
   public function getValues(PlanDetails $result) {
     return [
