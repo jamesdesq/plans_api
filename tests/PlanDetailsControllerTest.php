@@ -2,6 +2,8 @@
 
 namespace App\Tests;
 
+require './vendor/autoload.php';
+
 use GuzzleHttp\Client;
 use PHPUnit\Framework\TestCase;
 
