@@ -48,3 +48,5 @@ In the project root, run `bin/phpunit` to install PHPUnit's dependencies.
 
 You should now be able to run `bin/phpunit tests` to run the test suite.
 
+There are two sets of tests. The ones in the 'live' directory run on a live server. The ones in the 'mock' directory mock the requests and can be run without running the application. It is suggested you use the live tests for local development and the mocked ones in your deployment processes. 
+
